@@ -19,7 +19,7 @@
 <meta name="theme-color" content="#14202C">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"RealEstateAgent","name":"UMA Properties","telephone":"+34625991338","areaServed":["Barcelona","Madrid"],"address":{"@type":"PostalAddress","addressLocality":"Barcelona","addressCountry":"ES"},"knowsLanguage":["es","en"]}
@@ -51,23 +51,33 @@
 </header>
 
 <main id="main">
-<section class="hero" aria-labelledby="h-hero">
-  <div class="wrap">
-   <div class="hero-grid"><div class="hero-copy">
+<section class="hero hero--photo" aria-labelledby="h-hero">
+  <img class="hero-bg" src="img/hero.jpg" alt="Terraza de un ático con vistas a los tejados de Barcelona" fetchpriority="high">
+  <div class="wrap hero-in">
     <h1 id="h-hero" data-es="Gestión inmobiliaria en Barcelona, <em>en manos de confianza</em>." data-en="Property management in Barcelona, <em>in trusted hands</em>.">Gestión inmobiliaria en Barcelona, <em>en manos de confianza</em>.</h1>
     <p class="lead" data-es="Gestionamos, alquilamos y vendemos su inmueble, y acompañamos al inversor en todo el proceso con UMA 360." data-en="We manage, rent and sell your property, and support investors through the entire process with UMA 360.">Gestionamos, alquilamos y vendemos su inmueble, y acompañamos al inversor en todo el proceso con UMA 360.</p>
     <div class="cta">
-      <a class="btn solid" href="#propietarios" data-es="Soy propietario" data-en="I own a property">Soy propietario</a>
-      <a class="btn" href="#uma360" data-es="Soy inversor" data-en="I am an investor">Soy inversor</a>
-    </div></div>
-    <figure class="hero-photo"><img src="img/facade.jpg" alt="Fachada modernista con balcones en Barcelona" fetchpriority="high"></figure></div>
-    <div class="stats">
-      <div><strong>~50</strong><span data-es="propiedades en cartera" data-en="properties in portfolio">propiedades en cartera</span></div>
-      <div><strong>360°</strong><span data-es="acompañamiento integral" data-en="end-to-end support">acompañamiento integral</span></div>
-      <div><strong>Barcelona · Madrid</strong><span data-es="presencia en dos ciudades" data-en="presence in two cities">presencia en dos ciudades</span></div>
+      <a class="btn light" href="#propietarios" data-es="Soy propietario" data-en="I own a property">Soy propietario</a>
+      <a class="btn ghost-light" href="#uma360" data-es="Soy inversor" data-en="I am an investor">Soy inversor</a>
     </div>
   </div>
+  <div class="wrap quick-wrap">
+    <form class="quick" data-goto="#propietarios" aria-label="Valoración rápida">
+      <div class="field"><label class="fl" for="q-obj" data-es="Quiero" data-en="I want to">Quiero</label><select id="q-obj"><option>Alquilar</option><option>Vender</option><option>Delegar la gestión</option></select></div>
+      <div class="field"><label class="fl" for="q-ubi" data-es="Ubicación" data-en="Location">Ubicación</label><input id="q-ubi" autocomplete="address-level2" data-ph-es="Barrio o ciudad" data-ph-en="Neighbourhood or city" placeholder="Barrio o ciudad"></div>
+      <div class="field"><label class="fl" for="q-tipo" data-es="Tipo de inmueble" data-en="Property type">Tipo de inmueble</label><select id="q-tipo"><option>Piso</option><option>Ático</option><option>Casa</option><option>Local</option></select></div>
+      <button class="btn solid" type="submit" data-es="Solicitar valoración" data-en="Request assessment">Solicitar valoración</button>
+    </form>
+  </div>
 </section>
+
+<div class="wrap stats-wrap">
+  <div class="stats">
+    <div><strong>~50</strong><span data-es="propiedades en cartera" data-en="properties in portfolio">propiedades en cartera</span></div>
+    <div><strong>360°</strong><span data-es="acompañamiento integral" data-en="end-to-end support">acompañamiento integral</span></div>
+    <div><strong>Barcelona · Madrid</strong><span data-es="presencia en dos ciudades" data-en="presence in two cities">presencia en dos ciudades</span></div>
+  </div>
+</div>
 
 <section id="servicios" aria-labelledby="h-serv">
   <div class="wrap">
@@ -175,7 +185,7 @@
 
 <section id="nosotros" class="about" aria-labelledby="h-about">
   <div class="wrap split">
-    <div class="portrait" role="img" aria-label="Fotografía del equipo" data-es="Fotografía del equipo o del fundador" data-en="Team or founder photograph">Fotografía del equipo o del fundador</div>
+    <figure class="portrait"><img src="img/team.jpg" alt="Equipo de UMA Properties (fotografía de ejemplo)" loading="lazy"><figcaption data-es="Fotografía de ejemplo · se sustituirá por la del equipo" data-en="Sample photograph · to be replaced with the team photo">Fotografía de ejemplo · se sustituirá por la del equipo</figcaption></figure>
     <div>
       <p class="label" data-es="Sobre nosotros" data-en="About us">Sobre nosotros</p>
       <h2 id="h-about" data-es="Criterio profesional, trato cercano" data-en="Professional judgement, personal service">Criterio profesional, trato cercano</h2>

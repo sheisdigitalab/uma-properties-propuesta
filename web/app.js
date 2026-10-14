@@ -36,5 +36,5 @@
       store('uma-cookies',b.dataset.c);ck.hidden=true;document.body.classList.remove('has-cookie');
     })});
   }
-  $$('form').forEach(function(f){f.addEventListener('submit',function(e){e.preventDefault()})});
+  $$('form').forEach(function(f){f.addEventListener('submit',function(e){e.preventDefault();if(f.dataset.goto){location.hash=f.dataset.goto}})});
 })();
