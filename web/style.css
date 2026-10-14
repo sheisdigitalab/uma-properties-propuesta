@@ -1,6 +1,6 @@
 :root{
   --ink:#111820; --ink-2:#46525F; --ivory:#F6F2EB; --paper:#FFFFFF;
-  --gold:#8A6A3E; --gold-light:#D2B385; --line:#E4DED3; --line-soft:#ECE7DC;
+  --gold:#7D5F33; --gold-light:#D2B385; --line:#E4DED3; --line-soft:#ECE7DC;
   --fs-sm:.875rem; --fs-base:1rem; --fs-lg:clamp(1.0625rem,1rem + .3vw,1.2rem);
   --fs-h3:clamp(1.4rem,1.25rem + .6vw,1.7rem); --fs-h2:clamp(2rem,1.5rem + 2vw,3.1rem);
   --fs-h1:clamp(2.2rem,1.4rem + 3.4vw,4.2rem);
