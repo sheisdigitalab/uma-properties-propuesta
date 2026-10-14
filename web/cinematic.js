@@ -64,7 +64,7 @@
   var items = q('.u360-list li');
   if (items.length) {
     items.forEach(function (li) {
-      gsap.fromTo(li, { opacity: .28 }, { opacity: 1, ease: 'none',
+      gsap.fromTo(li, { opacity: .7 }, { opacity: 1, ease: 'none',
         scrollTrigger: { trigger: li, start: 'top 82%', end: 'top 52%', scrub: true } });
       gsap.from(li.querySelector('.n'), { x: -24, duration: .8, ease: ease,
         scrollTrigger: { trigger: li, start: 'top 85%', once: true } });
