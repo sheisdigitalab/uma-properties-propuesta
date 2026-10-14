@@ -19,7 +19,7 @@
 <meta name="theme-color" content="#14202C">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"RealEstateAgent","name":"UMA Properties","telephone":"+34625991338","areaServed":["Barcelona","Madrid"],"address":{"@type":"PostalAddress","addressLocality":"Barcelona","addressCountry":"ES"},"knowsLanguage":["es","en"]}
@@ -61,32 +61,37 @@
       <a class="btn ghost-light" href="#uma360" data-es="Soy inversor" data-en="I am an investor">Soy inversor</a>
     </div>
   </div>
-  <div class="wrap quick-wrap">
-    <form class="quick" data-goto="#propietarios" aria-label="Valoración rápida">
-      <div class="field"><label class="fl" for="q-obj" data-es="Quiero" data-en="I want to">Quiero</label><select id="q-obj"><option>Alquilar</option><option>Vender</option><option>Delegar la gestión</option></select></div>
-      <div class="field"><label class="fl" for="q-ubi" data-es="Ubicación" data-en="Location">Ubicación</label><input id="q-ubi" autocomplete="address-level2" data-ph-es="Barrio o ciudad" data-ph-en="Neighbourhood or city" placeholder="Barrio o ciudad"></div>
-      <div class="field"><label class="fl" for="q-tipo" data-es="Tipo de inmueble" data-en="Property type">Tipo de inmueble</label><select id="q-tipo"><option>Piso</option><option>Ático</option><option>Casa</option><option>Local</option></select></div>
-      <button class="btn solid" type="submit" data-es="Solicitar valoración" data-en="Request assessment">Solicitar valoración</button>
-    </form>
+  <div class="wrap hero-actions">
+    <nav class="acts3" aria-label="Qué desea hacer con su inmueble">
+      <a href="#propietarios"><span><small>01</small><b data-es="Alquilar mi inmueble" data-en="Rent my property">Alquilar mi inmueble</b></span><i aria-hidden="true">→</i></a>
+      <a href="#propietarios"><span><small>02</small><b data-es="Vender mi inmueble" data-en="Sell my property">Vender mi inmueble</b></span><i aria-hidden="true">→</i></a>
+      <a href="#propietarios"><span><small>03</small><b data-es="Delegar la gestión" data-en="Delegate management">Delegar la gestión</b></span><i aria-hidden="true">→</i></a>
+    </nav>
   </div>
 </section>
 
-<div class="wrap stats-wrap">
-  <div class="stats">
-    <div><strong>~50</strong><span data-es="propiedades en cartera" data-en="properties in portfolio">propiedades en cartera</span></div>
-    <div><strong>360°</strong><span data-es="acompañamiento integral" data-en="end-to-end support">acompañamiento integral</span></div>
-    <div><strong>Barcelona · Madrid</strong><span data-es="presencia en dos ciudades" data-en="presence in two cities">presencia en dos ciudades</span></div>
+<section class="quote" aria-label="Presentación">
+  <div class="wrap">
+    <p class="q" data-es="«Acompañamos a propietarios e inversores en cada decisión, con el rigor de quien gestiona su propio patrimonio.»" data-en="“We support owners and investors in every decision, with the rigour of someone managing their own assets.”">«Acompañamos a propietarios e inversores en cada decisión, con el rigor de quien gestiona su propio patrimonio.»</p>
+    <dl class="kpis">
+      <div><dd>+50</dd><dt data-es="Propiedades en gestión" data-en="Properties under management">Propiedades en gestión</dt></div>
+      <div><dd>BCN · MAD</dd><dt data-es="Ciudades" data-en="Cities">Ciudades</dt></div>
+      <div><dd data-es="Uno" data-en="One">Uno</dd><dt data-es="Interlocutor para todo" data-en="Contact for everything">Interlocutor para todo</dt></div>
+    </dl>
   </div>
-</div>
+</section>
 
 <section id="servicios" aria-labelledby="h-serv">
   <div class="wrap">
-    <p class="label" data-es="Servicios" data-en="Services">Servicios</p>
-    <h2 id="h-serv" data-es="Soluciones para cada propietario" data-en="Solutions for every owner">Soluciones para cada propietario</h2>
-    <div class="paths">
-      <article class="path"><span class="num" aria-hidden="true">I</span><h3 data-es="Gestión de propiedades" data-en="Property management">Gestión de propiedades</h3><p data-es="Nos ocupamos de inquilinos, cobros, incidencias y mantenimiento, con informes periódicos." data-en="We take care of tenants, payments, incidents and maintenance, with regular reporting.">Nos ocupamos de inquilinos, cobros, incidencias y mantenimiento, con informes periódicos.</p><a class="link" href="#propietarios" data-es="Solicitar gestión" data-en="Request management">Solicitar gestión</a></article>
-      <article class="path"><span class="num" aria-hidden="true">II</span><h3 data-es="Alquile su propiedad" data-en="Rent your property">Alquile su propiedad</h3><p data-es="Valoración, comercialización y selección rigurosa del inquilino, con todas las garantías." data-en="Valuation, marketing and rigorous tenant selection, with full guarantees.">Valoración, comercialización y selección rigurosa del inquilino, con todas las garantías.</p><a class="link" href="#propietarios" data-es="Solicitar valoración" data-en="Request a valuation">Solicitar valoración</a></article>
-      <article class="path"><span class="num" aria-hidden="true">III</span><h3 data-es="Venda su propiedad" data-en="Sell your property">Venda su propiedad</h3><p data-es="Estrategia de precio, difusión y acompañamiento hasta la firma ante notario." data-en="Pricing strategy, marketing and support through to the notary signing.">Estrategia de precio, difusión y acompañamiento hasta la firma ante notario.</p><a class="link" href="#propietarios" data-es="Solicitar valoración" data-en="Request a valuation">Solicitar valoración</a></article>
+    <div class="head2">
+      <div><p class="label" data-es="Para propietarios" data-en="For owners">Para propietarios</p>
+      <h2 id="h-serv" data-es="Servicios a la medida de su patrimonio" data-en="Services tailored to your assets">Servicios a la medida de su patrimonio</h2></div>
+      <p class="sub" data-es="Tanto si desea alquilar, vender o delegar por completo el día a día, nos ocupamos de cada detalle con transparencia." data-en="Whether you want to rent, sell or fully delegate the day-to-day, we take care of every detail transparently.">Tanto si desea alquilar, vender o delegar por completo el día a día, nos ocupamos de cada detalle con transparencia.</p>
+    </div>
+    <div class="svc">
+      <article><img src="img/living.jpg" alt="Salón de un piso gestionado" loading="lazy"><span class="num" aria-hidden="true">I</span><h3 data-es="Gestión de propiedades" data-en="Property management">Gestión de propiedades</h3><p data-es="Inquilinos, cobros, incidencias y mantenimiento. Su inmueble rinde sin que tenga que estar pendiente." data-en="Tenants, payments, incidents and maintenance. Your property performs without you having to keep watch.">Inquilinos, cobros, incidencias y mantenimiento. Su inmueble rinde sin que tenga que estar pendiente.</p><a class="link" href="#propietarios" data-es="Descubrir" data-en="Discover">Descubrir</a></article>
+      <article><img src="img/flat-eixample.jpg" alt="Piso amueblado listo para alquilar" loading="lazy"><span class="num" aria-hidden="true">II</span><h3 data-es="Alquiler" data-en="Rental">Alquiler</h3><p data-es="Renta de mercado, inquilinos verificados y contrato a cargo de nuestro equipo, hasta la entrega de llaves." data-en="Market rent, verified tenants and contract handled by our team, through to handing over the keys.">Renta de mercado, inquilinos verificados y contrato a cargo de nuestro equipo, hasta la entrega de llaves.</p><a class="link" href="#propietarios" data-es="Descubrir" data-en="Discover">Descubrir</a></article>
+      <article><img src="img/terrace-penthouse.jpg" alt="Interior de un inmueble en venta" loading="lazy"><span class="num" aria-hidden="true">III</span><h3 data-es="Venta" data-en="Sales">Venta</h3><p data-es="Valoración rigurosa, presentación cuidada y acceso a nuestra red de inversores, hasta la firma en notaría." data-en="Rigorous valuation, careful presentation and access to our investor network, through to the notary signing.">Valoración rigurosa, presentación cuidada y acceso a nuestra red de inversores, hasta la firma en notaría.</p><a class="link" href="#propietarios" data-es="Descubrir" data-en="Discover">Descubrir</a></article>
     </div>
   </div>
 </section>
@@ -94,19 +99,15 @@
 <div class="band" role="img" aria-label="Vista panorámica de Barcelona"><img src="img/skyline.jpg" alt="" loading="lazy"><p data-es="Barcelona · Madrid" data-en="Barcelona · Madrid">Barcelona · Madrid</p></div>
 
 <section id="uma360" class="u360" aria-labelledby="h-360">
-  <div class="wrap">
-    <p class="label">UMA 360</p>
-    <h2 id="h-360" data-es="Un solo interlocutor, de la adquisición a la renta" data-en="One single contact, from acquisition to income">Un solo interlocutor, de la adquisición a la renta</h2>
-    <p class="sub" data-es="Acompañamos al inversor en cada etapa de su inversión inmobiliaria, con criterio profesional y total transparencia." data-en="We support the investor at every stage of the real-estate investment, with professional judgement and full transparency.">Acompañamos al inversor en cada etapa de su inversión inmobiliaria, con criterio profesional y total transparencia.</p>
-    <ol class="steps" style="list-style:none;padding:0">
-      <li class="step"><h3 data-es="Búsqueda y adquisición" data-en="Search & acquisition">Búsqueda y adquisición</h3><p data-es="Identificamos y negociamos el inmueble acorde a su objetivo." data-en="We identify and negotiate the property that matches your goal.">Identificamos y negociamos el inmueble acorde a su objetivo.</p></li>
-      <li class="step"><h3 data-es="Asesoramiento legal y financiero" data-en="Legal & financial advice">Asesoramiento legal y financiero</h3><p data-es="Revisión jurídica, fiscalidad y estructura de financiación." data-en="Legal review, taxation and financing structure.">Revisión jurídica, fiscalidad y estructura de financiación.</p></li>
-      <li class="step"><h3 data-es="Reforma integral" data-en="Full renovation">Reforma integral</h3><p data-es="Proyecto y ejecución, con control de plazos y costes." data-en="Design and delivery, with control of time and costs.">Proyecto y ejecución, con control de plazos y costes.</p></li>
-      <li class="step"><h3 data-es="Amueblamiento" data-en="Furnishing">Amueblamiento</h3><p data-es="Interiorismo y mobiliario orientados al alquiler." data-en="Interior design and furnishing geared to letting.">Interiorismo y mobiliario orientados al alquiler.</p></li>
-      <li class="step"><h3 data-es="Alquiler" data-en="Letting">Alquiler</h3><p data-es="Comercialización y selección de inquilinos." data-en="Marketing and tenant selection.">Comercialización y selección de inquilinos.</p></li>
-      <li class="step"><h3 data-es="Gestión posterior" data-en="Ongoing management">Gestión posterior</h3><p data-es="Administración y mantenimiento continuos." data-en="Continuous administration and maintenance.">Administración y mantenimiento continuos.</p></li>
-    </ol>
-    <a class="btn solid" href="#contacto" data-es="Concertar una reunión" data-en="Arrange a meeting">Concertar una reunión</a>
+  <div class="wrap u360-grid">
+    <div class="u360-copy">
+      <p class="label" data-es="Para inversores" data-en="For investors">Para inversores</p>
+      <h2 id="h-360">UMA 360</h2>
+      <p class="tagline" data-es="Usted invierte. Nosotros nos ocupamos de todo lo demás." data-en="You invest. We take care of everything else.">Usted invierte. Nosotros nos ocupamos de todo lo demás.</p>
+      <p class="sub" data-es="Un servicio integral que acompaña al inversor durante todo el ciclo: de la búsqueda del inmueble a su gestión una vez alquilado, con un único equipo y un único interlocutor." data-en="An end-to-end service that supports the investor through the whole cycle: from finding the property to managing it once let, with one team and one point of contact.">Un servicio integral que acompaña al inversor durante todo el ciclo: de la búsqueda del inmueble a su gestión una vez alquilado, con un único equipo y un único interlocutor.</p>
+      <div class="cta"><a class="btn gold" href="#contacto" data-es="Hablar con un asesor" data-en="Talk to an advisor">Hablar con un asesor</a></div>
+    </div>
+    <ol class="u360-list"><li><span class="n">01</span><span><b data-es="Búsqueda y adquisición" data-en="Search & acquisition">Búsqueda y adquisición</b><em data-es="Identificamos y negociamos el inmueble acorde a su objetivo." data-en="We identify and negotiate the property that matches your goal.">Identificamos y negociamos el inmueble acorde a su objetivo.</em></span></li><li><span class="n">02</span><span><b data-es="Asesoramiento legal y financiero" data-en="Legal & financial advice">Asesoramiento legal y financiero</b><em data-es="Revisión jurídica, fiscalidad y estructura de financiación." data-en="Legal review, taxation and financing structure.">Revisión jurídica, fiscalidad y estructura de financiación.</em></span></li><li><span class="n">03</span><span><b data-es="Reforma integral" data-en="Full renovation">Reforma integral</b><em data-es="Proyecto y ejecución, con control de plazos y costes." data-en="Design and delivery, with control of time and costs.">Proyecto y ejecución, con control de plazos y costes.</em></span></li><li><span class="n">04</span><span><b data-es="Amueblamiento" data-en="Furnishing">Amueblamiento</b><em data-es="Interiorismo y mobiliario orientados al alquiler." data-en="Interior design and furnishing geared to letting.">Interiorismo y mobiliario orientados al alquiler.</em></span></li><li><span class="n">05</span><span><b data-es="Alquiler" data-en="Letting">Alquiler</b><em data-es="Comercialización y selección de inquilinos." data-en="Marketing and tenant selection.">Comercialización y selección de inquilinos.</em></span></li><li><span class="n">06</span><span><b data-es="Gestión posterior" data-en="Ongoing management">Gestión posterior</b><em data-es="Administración y mantenimiento continuos." data-en="Continuous administration and maintenance.">Administración y mantenimiento continuos.</em></span></li></ol>
   </div>
 </section>
 
@@ -243,6 +244,9 @@
   </div>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="app.js"></script>
+<script src="cinematic.js"></script>
 </body>
 </html>
