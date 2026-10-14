@@ -368,3 +368,7 @@ header.site.scrolled{box-shadow:0 10px 30px -22px rgba(17,24,32,.5)}
 .scenes{position:absolute;inset:0;z-index:2;display:grid;place-items:center;padding:0 var(--gutter);pointer-events:none;text-align:center}
 .scene{grid-area:1/1;color:#fff;font-size:clamp(2.1rem,1.2rem + 4.4vw,5rem);font-weight:300;letter-spacing:-.02em;line-height:1.06;max-width:20ch;opacity:0}
 .scene em{font-style:italic;color:#D2B385}
+
+/* dentro de la presentación (marco): sin barra de scroll visible */
+html.framed{scrollbar-width:none;-ms-overflow-style:none}
+html.framed::-webkit-scrollbar{display:none;width:0}

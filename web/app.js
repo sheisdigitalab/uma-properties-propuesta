@@ -1,4 +1,5 @@
 (function(){
+  try{if(window.self!==window.top)document.documentElement.classList.add('framed')}catch(e){document.documentElement.classList.add('framed')}
   var $$=function(s){return Array.prototype.slice.call(document.querySelectorAll(s))};
   function store(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}}
 
