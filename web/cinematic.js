@@ -21,18 +21,13 @@
       .from('.hero--photo .lead', { y: 28, opacity: 0, duration: .9 }, '-=.7')
       .from('.hero--photo .cta .btn', { y: 20, opacity: 0, duration: .7, stagger: .1 }, '-=.6')
       .from('.acts3 a', { y: 24, opacity: 0, duration: .8, stagger: .12 }, '-=.5');
-    /* Escena fijada: la foto avanza, el titular se va y aparecen dos mensajes */
-    var scenes = q('.scene');
-    var pin = gsap.timeline({ defaults: { ease: 'none' },
-      scrollTrigger: { trigger: '.hero--photo', start: 'top top', end: '+=240%', scrub: .8, pin: true, anticipatePin: 1 } });
-    pin.to(heroBg, { scale: 1.45, duration: 3 }, 0)
-       .to('.veil', { opacity: 1, duration: 1 }, 0)
-       .to('.hero-in', { opacity: 0, y: -70, duration: .6 }, 0)
-       .to('.cue', { opacity: 0, duration: .3 }, 0);
-    if (scenes[0]) pin.fromTo(scenes[0], { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: .45 }, .7)
-                      .to(scenes[0], { opacity: 0, y: -40, duration: .4 }, 1.55);
-    if (scenes[1]) pin.fromTo(scenes[1], { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: .45 }, 1.9)
-                      .to(scenes[1], { opacity: 0, y: -30, duration: .4 }, 2.7);
+    /* Scroll sutil: la foto se acerca un poco y el texto se aleja despacio */
+    var drift = gsap.timeline({ defaults: { ease: 'none' },
+      scrollTrigger: { trigger: '.hero--photo', start: 'top top', end: 'bottom top', scrub: true } });
+    drift.to(heroBg, { yPercent: 7 }, 0)
+         .to('.veil', { opacity: .35 }, 0)
+         .to('.hero-in', { y: -36, opacity: .15 }, .15)
+         .to('.cue', { opacity: 0 }, 0);
   }
 
   /* Etiquetas y titulares: aparecen al entrar */
