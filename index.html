@@ -42,15 +42,36 @@ h1,h2,h3{font-family:Figtree,Figtree,system-ui,sans-serif;font-weight:400;line-h
 .close p{color:#C9D0D8;margin-top:20px}
 .close a{display:inline-block;margin-top:36px;border:1px solid #fff;color:#fff;padding:15px 34px;text-decoration:none;font-size:.875rem;letter-spacing:.1em;text-transform:uppercase;font-weight:500}
 .close a:hover{background:#fff;color:var(--ink)}
+
+.cover{position:relative;min-height:clamp(620px,96vh,880px);background:#111820;color:#fff;overflow:hidden;display:flex}
+.cover-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;animation:kb 18s ease-out both}
+@keyframes kb{from{transform:scale(1.14)}to{transform:scale(1.02)}}
+.cover::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,16,22,.92),rgba(10,16,22,.55) 60%,rgba(10,16,22,.25));z-index:1}
+.cover-frame{position:absolute;inset:clamp(12px,2vw,24px);border:1px solid rgba(210,179,133,.55);z-index:2;pointer-events:none}
+.cover-in{position:relative;z-index:3;width:100%;display:flex;flex-direction:column;justify-content:space-between;gap:48px;padding-block:clamp(48px,6vw,80px)}
+.mark{font-size:1.5rem;letter-spacing:.34em;font-weight:500}
+.mark span{display:block;font-size:.875rem;letter-spacing:.5em;color:#D2B385;margin-top:4px}
+.kick{font-size:.875rem;font-weight:600;letter-spacing:.34em;text-transform:uppercase;color:#D2B385;display:flex;align-items:center;gap:18px;margin-bottom:28px}
+.kick::before{content:"";width:56px;height:1px;background:#D2B385}
+.cover h1{font-size:clamp(2.8rem,1.4rem + 5.6vw,6rem);font-weight:300;letter-spacing:-.025em;line-height:.98;max-width:14ch;color:#fff}
+.cover h1 em{font-style:italic;color:#D2B385;font-weight:300}
+.cover .lede{max-width:50ch;margin-top:32px;font-size:1.15rem;font-weight:300;color:#DDE2E7}
+.cover .by{margin:0;color:#C9CFD6;letter-spacing:.14em;font-size:.875rem;text-transform:uppercase}
+@media(prefers-reduced-motion:reduce){.cover-bg{animation:none}}
 </style>
 </head>
 <body>
 <section class="cover">
-  <div class="wrap">
-    <p class="label">Propuesta · UMA Properties</p>
-    <h1>Una web a la altura de <em>su cartera</em>.</h1>
-    <p>Diseñada para que cada visita se convierta en un contacto comercial de calidad: propietarios que quieren alquilar, vender o delegar la gestión.</p>
-    <p class="by">She's Digital · Octubre 2026</p>
+  <img src="web/img/skyline.jpg" alt="" class="cover-bg">
+  <div class="cover-frame"></div>
+  <div class="wrap cover-in">
+    <p class="mark">UMA <span>PROPERTIES</span></p>
+    <div>
+      <p class="kick">Propuesta de diseño web</p>
+      <h1>Una web a la altura de <em>su cartera</em>.</h1>
+      <p class="lede">Diseñada para que cada visita se convierta en un contacto comercial de calidad: propietarios que quieren alquilar, vender o delegar la gestión.</p>
+    </div>
+    <p class="by">She's Digital &nbsp;·&nbsp; Octubre 2026</p>
   </div>
 </section>
 

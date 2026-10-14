@@ -18,7 +18,8 @@
     gsap.to(heroBg, { yPercent: 14, ease: 'none',
       scrollTrigger: { trigger: '.hero--photo', start: 'top top', end: 'bottom top', scrub: true } });
     var tl = gsap.timeline({ defaults: { ease: ease } });
-    tl.from('.hero--photo h1', { y: 48, opacity: 0, duration: 1.1, delay: .15 })
+    tl.from('.hero--photo .kicker', { x: -30, opacity: 0, duration: .9 })
+      .from('.hero--photo h1', { y: 56, opacity: 0, duration: 1.3 }, '-=.5')
       .from('.hero--photo .lead', { y: 28, opacity: 0, duration: .9 }, '-=.7')
       .from('.hero--photo .cta .btn', { y: 20, opacity: 0, duration: .7, stagger: .1 }, '-=.6')
       .from('.acts3 a', { y: 24, opacity: 0, duration: .8, stagger: .12 }, '-=.5');

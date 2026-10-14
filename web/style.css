@@ -333,3 +333,24 @@ header.site.scrolled{box-shadow:0 10px 30px -22px rgba(17,24,32,.5)}
 .hero--photo,.band,.svc article{overflow:clip}
 .u360-copy{align-self:start}
 @media(min-width:901px){.u360-copy{position:sticky;top:120px}}
+
+/* ===== Hero de lujo ===== */
+.hero--photo{min-height:clamp(680px,100vh,900px)}
+.hero--photo::before{background:radial-gradient(120% 90% at 20% 60%,rgba(10,16,22,.35),rgba(10,16,22,.85) 80%),linear-gradient(90deg,rgba(10,16,22,.88) 0%,rgba(10,16,22,.5) 55%,rgba(10,16,22,.2) 100%)}
+.hero--photo::after{content:"";position:absolute;inset:clamp(12px,2vw,24px);border:1px solid rgba(210,179,133,.5);pointer-events:none;z-index:2}
+.hero-bg{object-position:center 40%}
+.kicker{font-size:.875rem;font-weight:600;letter-spacing:.34em;text-transform:uppercase;color:#D2B385;margin-bottom:28px;display:flex;align-items:center;gap:18px}
+.kicker::before{content:"";width:56px;height:1px;background:#D2B385;flex:none}
+.hero--photo h1{font-size:clamp(2.9rem,1.5rem + 5.8vw,6.2rem);font-weight:300;letter-spacing:-.025em;line-height:.96;max-width:13ch}
+.hero--photo h1 em{font-style:italic;font-weight:300}
+.hero--photo .lead{font-weight:300;font-size:clamp(1.1rem,1rem + .5vw,1.3rem);max-width:46ch}
+.cue{position:absolute;z-index:3;right:clamp(28px,5vw,72px);bottom:clamp(150px,18vw,210px);display:flex;flex-direction:column;align-items:center;gap:14px;color:#fff;text-decoration:none;font-size:.875rem;letter-spacing:.3em;text-transform:uppercase;writing-mode:vertical-rl}
+.cue i{width:1px;height:72px;background:linear-gradient(#D2B385,rgba(210,179,133,0));display:block;animation:cue 2.2s ease-in-out infinite;transform-origin:top}
+@keyframes cue{0%{transform:scaleY(0)}50%{transform:scaleY(1)}100%{transform:scaleY(1);opacity:0}}
+@media(max-width:760px){.cue{display:none}.kicker{letter-spacing:.2em}.kicker::before{width:28px}}
+@media(prefers-reduced-motion:reduce){.cue i{animation:none}}
+
+.hero--photo::before{background:linear-gradient(90deg,rgba(10,16,22,.78) 0%,rgba(10,16,22,.38) 52%,rgba(10,16,22,.04) 100%),linear-gradient(0deg,rgba(10,16,22,.6) 0%,rgba(10,16,22,0) 42%)}
+@media(max-width:900px){.hero--photo::before{background:linear-gradient(180deg,rgba(10,16,22,.62),rgba(10,16,22,.5))}}
+.hero--photo::before{background:linear-gradient(90deg,rgba(10,16,22,.84) 0%,rgba(10,16,22,.58) 55%,rgba(10,16,22,.08) 100%),linear-gradient(0deg,rgba(10,16,22,.6) 0%,rgba(10,16,22,0) 42%)}
+@media(max-width:900px){.hero--photo::before{background:linear-gradient(180deg,rgba(10,16,22,.66),rgba(10,16,22,.54))}}
