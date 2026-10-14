@@ -354,3 +354,11 @@ header.site.scrolled{box-shadow:0 10px 30px -22px rgba(17,24,32,.5)}
 @media(max-width:900px){.hero--photo::before{background:linear-gradient(180deg,rgba(10,16,22,.62),rgba(10,16,22,.5))}}
 .hero--photo::before{background:linear-gradient(90deg,rgba(10,16,22,.84) 0%,rgba(10,16,22,.58) 55%,rgba(10,16,22,.08) 100%),linear-gradient(0deg,rgba(10,16,22,.6) 0%,rgba(10,16,22,0) 42%)}
 @media(max-width:900px){.hero--photo::before{background:linear-gradient(180deg,rgba(10,16,22,.66),rgba(10,16,22,.54))}}
+
+.hero-bg{object-position:center 55%}
+.hero--photo::before{background:linear-gradient(90deg,rgba(10,16,22,.8) 0%,rgba(10,16,22,.5) 50%,rgba(10,16,22,.05) 100%),linear-gradient(0deg,rgba(10,16,22,.55) 0%,rgba(10,16,22,0) 40%)}
+@media(max-width:900px){.hero--photo::before{background:linear-gradient(180deg,rgba(10,16,22,.6),rgba(10,16,22,.48))}}
+@media(max-width:900px){
+  .hero-bg{object-position:68% 50%}
+  .hero--photo::before{background:linear-gradient(180deg,rgba(10,16,22,.5) 0%,rgba(10,16,22,.32) 45%,rgba(10,16,22,.72) 100%)}
+}
