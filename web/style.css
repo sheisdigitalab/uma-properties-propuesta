@@ -389,3 +389,13 @@ html.framed::-webkit-scrollbar{display:none;width:0}
 .hero-actions{background:rgba(10,16,22,.6);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
 .hero-actions .acts3{border-top:0}
 @media(min-width:761px){.hero-actions{padding-inline:clamp(24px,3vw,40px)}}
+
+/* foto de equipo apaisada (grupo) */
+.portrait img{aspect-ratio:4/3;object-position:center 30%}
+/* siete accesos en el menú: algo más compactos en escritorio medio */
+@media(min-width:1001px) and (max-width:1180px){.menu{gap:20px}}
+.svc article{scroll-margin-top:calc(var(--header-h) + 24px)}
+/* titular algo más contenido para que las tres acciones quepan en la primera pantalla */
+.hero--photo h1{font-size:clamp(2.5rem,1.3rem + 3.6vw,4.4rem)}
+
+html.framed{scroll-behavior:auto}
