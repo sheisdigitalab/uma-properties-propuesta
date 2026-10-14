@@ -40,8 +40,7 @@ h1,h2,h3{font-family:Figtree,Figtree,system-ui,sans-serif;font-weight:400;line-h
 .close{background:var(--ink);color:#fff;padding-block:clamp(72px,9vw,120px);text-align:center}
 .close h2{font-size:clamp(2rem,1.5rem + 2vw,3.2rem);max-width:20ch;margin-inline:auto}
 .close p{color:#C9D0D8;margin-top:20px}
-.close a{display:inline-block;margin-top:36px;border:1px solid #fff;color:#fff;padding:15px 34px;text-decoration:none;font-size:.875rem;letter-spacing:.1em;text-transform:uppercase;font-weight:500}
-.close a:hover{background:#fff;color:var(--ink)}
+
 
 .cover{position:relative;min-height:clamp(620px,96vh,880px);background:#111820;color:#fff;overflow:hidden;display:flex}
 .cover-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;animation:kb 18s ease-out both}
@@ -49,15 +48,37 @@ h1,h2,h3{font-family:Figtree,Figtree,system-ui,sans-serif;font-weight:400;line-h
 .cover::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,16,22,.92),rgba(10,16,22,.55) 60%,rgba(10,16,22,.25));z-index:1}
 .cover-frame{position:absolute;inset:clamp(12px,2vw,24px);border:1px solid rgba(210,179,133,.55);z-index:2;pointer-events:none}
 .cover-in{position:relative;z-index:3;width:100%;display:flex;flex-direction:column;justify-content:space-between;gap:48px;padding-block:clamp(48px,6vw,80px)}
-.mark{font-size:1.5rem;letter-spacing:.34em;font-weight:500}
-.mark span{display:block;font-size:.875rem;letter-spacing:.5em;color:#D2B385;margin-top:4px}
-.kick{font-size:.875rem;font-weight:600;letter-spacing:.34em;text-transform:uppercase;color:#D2B385;display:flex;align-items:center;gap:18px;margin-bottom:28px}
-.kick::before{content:"";width:56px;height:1px;background:#D2B385}
+.cover .mark{font-size:1.5rem;letter-spacing:.34em;font-weight:500;color:#fff;margin:0;max-width:none}
+.cover .mark span{display:block;font-size:.875rem;letter-spacing:.5em;color:#D2B385;margin-top:4px}
+.cover .kick{margin-top:0;color:#D2B385;font-size:.875rem;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:#D2B385;display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;margin-bottom:28px;max-width:100%}
+.cover .kick::before{content:"";width:56px;height:1px;background:#D2B385}
 .cover h1{font-size:clamp(2.8rem,1.4rem + 5.6vw,6rem);font-weight:300;letter-spacing:-.025em;line-height:.98;max-width:14ch;color:#fff}
 .cover h1 em{font-style:italic;color:#D2B385;font-weight:300}
 .cover .lede{max-width:50ch;margin-top:32px;font-size:1.15rem;font-weight:300;color:#DDE2E7}
 .cover .by{margin:0;color:#C9CFD6;letter-spacing:.14em;font-size:.875rem;text-transform:uppercase}
 @media(prefers-reduced-motion:reduce){.cover-bg{animation:none}}
+/* cover mobile scrim */
+@media(max-width:700px){
+  .cover::before{background:linear-gradient(180deg,rgba(10,16,22,.82),rgba(10,16,22,.74))}
+  .kick{letter-spacing:.16em}
+  .cover .kick::before{width:28px}
+  .cover-in{padding-inline:max(var(--gutter),32px)}
+}
+.close h2{max-width:22ch}
+.close-text{max-width:56ch;margin-inline:auto}
+.close-cta{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:36px}
+.cb{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 32px;font-size:.8125rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;border:1px solid transparent;transition:background .25s,color .25s,border-color .25s}
+.cb-main{background:#B8935F;border-color:#B8935F;color:#111820}
+.cb-main:hover{background:transparent;color:#fff;border-color:#fff}
+.cb-alt{border-color:#fff;color:#fff;background:transparent}
+.cb-alt:hover{background:#fff;color:#111820}
+.cb:focus-visible,.close-sign a:focus-visible{outline:2px solid #D2B385;outline-offset:3px}
+.close-sign{margin-top:28px;font-size:.875rem;color:#C9D0D8}
+.close-sign a{color:#C9D0D8;text-decoration:underline;text-underline-offset:3px}
+.close-sign a:hover{color:#fff}
+@media(max-width:600px){.close-cta{flex-direction:column;align-items:stretch}.cb{width:100%;min-height:56px}}
+/* stage-fix: en pantallas estrechas la ventana de escritorio no debe desbordar */
+@media(max-width:980px){.stage>div{min-width:0;width:100%}.stage>div:last-child{display:flex;flex-direction:column;align-items:center}}
 </style>
 </head>
 <body>
@@ -68,10 +89,10 @@ h1,h2,h3{font-family:Figtree,Figtree,system-ui,sans-serif;font-weight:400;line-h
     <p class="mark">UMA <span>PROPERTIES</span></p>
     <div>
       <p class="kick">Propuesta de diseño web</p>
-      <h1>Una web a la altura de <em>su cartera</em>.</h1>
+      <h1>Una web a la altura de <em>su patrimonio</em>.</h1>
       <p class="lede">Diseñada para que cada visita se convierta en un contacto comercial de calidad: propietarios que quieren alquilar, vender o delegar la gestión.</p>
     </div>
-    <p class="by">She's Digital &nbsp;·&nbsp; Octubre 2026</p>
+    <p class="by">She is Digital Lab &nbsp;·&nbsp; Octubre 2026</p>
   </div>
 </section>
 
@@ -79,13 +100,13 @@ h1,h2,h3{font-family:Figtree,Figtree,system-ui,sans-serif;font-weight:400;line-h
   <div class="stage">
     <div>
       <div class="desk">
-        <div class="bar"><i></i><i></i><i></i><span>umaproperties.com</span></div>
-        <div class="view" id="v"><iframe id="f" src="web/index.html?v=5" title="Versión escritorio"></iframe></div>
+        <div class="bar"><i></i><i></i><i></i><span>umaproperties.es</span></div>
+        <div class="view" id="v"><iframe id="f" src="web/index.html?v=6" title="Versión escritorio"></iframe></div>
       </div>
       <p class="hint">Versión escritorio · puede desplazarse por la web</p>
     </div>
     <div>
-      <div class="phone"><div class="scr"><iframe src="web/index.html?v=5" title="Versión móvil"></iframe></div></div>
+      <div class="phone"><div class="scr"><iframe src="web/index.html?v=6" title="Versión móvil"></iframe></div></div>
       <p class="hint">Versión móvil</p>
     </div>
   </div>
@@ -100,9 +121,13 @@ h1,h2,h3{font-family:Figtree,Figtree,system-ui,sans-serif;font-weight:400;line-h
 
 <section class="close">
   <div class="wrap">
-    <h2>Empecemos a construirla.</h2>
-    <p>Con inicio en noviembre, podría estar publicada antes de final de año.</p>
-    <a href="https://sheisdigitalab.com">She's Digital</a>
+    <h2>¿Le encaja esta dirección?</h2>
+    <p class="close-text">Si es así, le preparo el presupuesto detallado y lo comentamos en una llamada de 20 minutos. Desde que tengamos los contenidos, la web estaría lista en unas 6 a 8 semanas.</p>
+    <div class="close-cta">
+      <a class="cb cb-main" href="https://wa.me/34637889942">Escribir por WhatsApp</a>
+      <a class="cb cb-alt" href="mailto:hola@sheisdigitalab.com?subject=Propuesta%20web%20UMA%20Properties">Enviar un email</a>
+    </div>
+    <p class="close-sign"><a href="https://sheisdigitalab.com">She is Digital Lab</a> · <a href="mailto:hola@sheisdigitalab.com">hola@sheisdigitalab.com</a></p>
   </div>
 </section>
 

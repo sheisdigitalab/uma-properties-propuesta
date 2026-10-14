@@ -372,3 +372,20 @@ header.site.scrolled{box-shadow:0 10px 30px -22px rgba(17,24,32,.5)}
 /* dentro de la presentación (marco): sin barra de scroll visible */
 html.framed{scrollbar-width:none;-ms-overflow-style:none}
 html.framed::-webkit-scrollbar{display:none;width:0}
+
+/* Contraste AA medido sobre la foto: titular 12:1, oro 5 a 7:1, texto 8 a 11:1 */
+.hero--photo::before{background:
+  linear-gradient(0deg,rgba(10,16,22,.88) 0%,rgba(10,16,22,0) 50%),
+  linear-gradient(90deg,rgba(10,16,22,.9) 0%,rgba(10,16,22,.82) 55%,rgba(10,16,22,.45) 75%,rgba(10,16,22,.12) 100%)}
+@media(max-width:900px){.hero--photo::before{background:linear-gradient(180deg,rgba(10,16,22,.78) 0%,rgba(10,16,22,.74) 50%,rgba(10,16,22,.8) 100%)}}
+.hero--photo :focus-visible,.u360 :focus-visible,.owners :focus-visible,footer :focus-visible,.cookie :focus-visible{outline-color:#D2B385}
+
+/* La portada cabe en la primera pantalla; el degradado inferior solo cubre las acciones */
+.hero--photo{min-height:clamp(600px,calc(100svh - 118px),820px)}
+.hero--photo::before{background:
+  linear-gradient(0deg,rgba(10,16,22,.92) 0%,rgba(10,16,22,0) 32%),
+  linear-gradient(90deg,rgba(10,16,22,.9) 0%,rgba(10,16,22,.82) 52%,rgba(10,16,22,.4) 74%,rgba(10,16,22,.1) 100%)}
+@media(max-width:900px){.hero--photo::before{background:linear-gradient(180deg,rgba(10,16,22,.78) 0%,rgba(10,16,22,.74) 50%,rgba(10,16,22,.82) 100%)}}
+.hero-actions{background:rgba(10,16,22,.6);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.hero-actions .acts3{border-top:0}
+@media(min-width:761px){.hero-actions{padding-inline:clamp(24px,3vw,40px)}}

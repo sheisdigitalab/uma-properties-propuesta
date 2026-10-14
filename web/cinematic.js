@@ -2,6 +2,7 @@
 (function () {
   if (!window.gsap || !window.ScrollTrigger) return;
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if (/[?&]shot/.test(location.search)) return; /* capturas estáticas */
   var gsap = window.gsap, ST = window.ScrollTrigger;
   gsap.registerPlugin(ST);
   var q = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };

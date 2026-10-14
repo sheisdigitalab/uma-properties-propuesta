@@ -32,7 +32,7 @@
   var ck=document.querySelector('.cookie');
   if(ck){
     var framed=false;try{framed=window.self!==window.top}catch(e){framed=true}
-    if(framed||store('uma-cookies')){ck.hidden=true}else{document.body.classList.add('has-cookie')}
+    if(framed||location.search.indexOf('shot')>-1||store('uma-cookies')){ck.hidden=true}else{document.body.classList.add('has-cookie')}
     $$('.cookie [data-c]').forEach(function(b){b.addEventListener('click',function(){
       store('uma-cookies',b.dataset.c);ck.hidden=true;document.body.classList.remove('has-cookie');
     })});
