@@ -19,7 +19,7 @@
 <meta name="theme-color" content="#14202C">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"RealEstateAgent","name":"UMA Properties","telephone":"+34625991338","areaServed":["Barcelona","Madrid"],"address":{"@type":"PostalAddress","addressLocality":"Barcelona","addressCountry":"ES"},"knowsLanguage":["es","en"]}
@@ -53,12 +53,14 @@
 <main id="main">
 <section class="hero" aria-labelledby="h-hero">
   <div class="wrap">
+   <div class="hero-grid"><div class="hero-copy">
     <h1 id="h-hero" data-es="Gestión inmobiliaria en Barcelona, <em>en manos de confianza</em>." data-en="Property management in Barcelona, <em>in trusted hands</em>.">Gestión inmobiliaria en Barcelona, <em>en manos de confianza</em>.</h1>
     <p class="lead" data-es="Gestionamos, alquilamos y vendemos su inmueble, y acompañamos al inversor en todo el proceso con UMA 360." data-en="We manage, rent and sell your property, and support investors through the entire process with UMA 360.">Gestionamos, alquilamos y vendemos su inmueble, y acompañamos al inversor en todo el proceso con UMA 360.</p>
     <div class="cta">
       <a class="btn solid" href="#propietarios" data-es="Soy propietario" data-en="I own a property">Soy propietario</a>
       <a class="btn" href="#uma360" data-es="Soy inversor" data-en="I am an investor">Soy inversor</a>
-    </div>
+    </div></div>
+    <figure class="hero-photo"><img src="img/facade.jpg" alt="Fachada modernista con balcones en Barcelona" fetchpriority="high"></figure></div>
     <div class="stats">
       <div><strong>~50</strong><span data-es="propiedades en cartera" data-en="properties in portfolio">propiedades en cartera</span></div>
       <div><strong>360°</strong><span data-es="acompañamiento integral" data-en="end-to-end support">acompañamiento integral</span></div>
@@ -78,6 +80,8 @@
     </div>
   </div>
 </section>
+
+<div class="band" role="img" aria-label="Vista panorámica de Barcelona"><img src="img/skyline.jpg" alt="" loading="lazy"><p data-es="Barcelona · Madrid" data-en="Barcelona · Madrid">Barcelona · Madrid</p></div>
 
 <section id="uma360" class="u360" aria-labelledby="h-360">
   <div class="wrap">
@@ -102,8 +106,8 @@
     <h2 id="h-proy" data-es="Reformas que revalorizan" data-en="Renovations that add value">Reformas que revalorizan</h2>
     <p class="sub" data-es="Así transformamos un inmueble dentro de UMA 360, de la primera visita a la entrega de llaves." data-en="How we transform a property within UMA 360, from the first visit to handing over the keys.">Así transformamos un inmueble dentro de UMA 360, de la primera visita a la entrega de llaves.</p>
     <div class="projects">
-      <article class="proj"><div class="ba"><div class="ph d" role="img" aria-label="Antes de la reforma"><span class="tag" data-es="Antes" data-en="Before">Antes</span></div><div class="ph a" role="img" aria-label="Después de la reforma"><span class="tag" data-es="Después" data-en="After">Después</span></div></div><h3 data-es="Reforma integral · Eixample" data-en="Full renovation · Eixample">Reforma integral · Eixample</h3><p data-es="Proyecto de ejemplo. Aquí irá la descripción real del trabajo." data-en="Sample project. The real description will go here.">Proyecto de ejemplo. Aquí irá la descripción real del trabajo.</p></article>
-      <article class="proj"><div class="ba"><div class="ph d" role="img" aria-label="Antes de la reforma"><span class="tag" data-es="Antes" data-en="Before">Antes</span></div><div class="ph b" role="img" aria-label="Después de la reforma"><span class="tag" data-es="Después" data-en="After">Después</span></div></div><h3 data-es="Reforma y amueblamiento · Gràcia" data-en="Renovation and furnishing · Gràcia">Reforma y amueblamiento · Gràcia</h3><p data-es="Proyecto de ejemplo. Aquí irá la descripción real del trabajo." data-en="Sample project. The real description will go here.">Proyecto de ejemplo. Aquí irá la descripción real del trabajo.</p></article>
+      <article class="proj"><div class="ba"><div class="ph"><img src="img/before-1.jpg" alt="Salón antes de la reforma" loading="lazy" decoding="async"><span class="tag" data-es="Antes" data-en="Before">Antes</span></div><div class="ph"><img src="img/living.jpg" alt="Salón después de la reforma" loading="lazy" decoding="async"><span class="tag" data-es="Después" data-en="After">Después</span></div></div><h3 data-es="Reforma integral · Eixample" data-en="Full renovation · Eixample">Reforma integral · Eixample</h3><p data-es="Proyecto de ejemplo. Aquí irá la descripción real del trabajo." data-en="Sample project. The real description will go here.">Proyecto de ejemplo. Aquí irá la descripción real del trabajo.</p></article>
+      <article class="proj"><div class="ba"><div class="ph"><img src="img/before-2.jpg" alt="Estancia antes de la reforma" loading="lazy" decoding="async"><span class="tag" data-es="Antes" data-en="Before">Antes</span></div><div class="ph"><img src="img/heritage.jpg" alt="Estancia después de la reforma" loading="lazy" decoding="async"><span class="tag" data-es="Después" data-en="After">Después</span></div></div><h3 data-es="Reforma y amueblamiento · Gràcia" data-en="Renovation and furnishing · Gràcia">Reforma y amueblamiento · Gràcia</h3><p data-es="Proyecto de ejemplo. Aquí irá la descripción real del trabajo." data-en="Sample project. The real description will go here.">Proyecto de ejemplo. Aquí irá la descripción real del trabajo.</p></article>
     </div>
   </div>
 </section>
@@ -118,9 +122,9 @@
       <button class="chip" aria-pressed="false" data-f="venta" data-es="Venta" data-en="Sale">Venta</button>
     </div>
     <div class="grid">
-      <article class="card" data-t="alquiler"><a href="propiedad.html"><div class="ph a" role="img" aria-label="Fotografía del inmueble"><span class="tag" data-es="Alquiler" data-en="Rent">Alquiler</span></div><div class="body"><h3 data-es="Piso luminoso · Eixample" data-en="Bright flat · Eixample">Piso luminoso · Eixample</h3><div class="meta"><span>85 m²</span><span data-es="3 hab." data-en="3 bed">3 hab.</span><span data-es="2 baños" data-en="2 bath">2 baños</span></div><p class="price">1.850 €/<span data-es="mes" data-en="month">mes</span></p></div></a></article>
-      <article class="card" data-t="venta"><a href="propiedad.html"><div class="ph b" role="img" aria-label="Fotografía del inmueble"><span class="tag" data-es="Venta" data-en="Sale">Venta</span></div><div class="body"><h3 data-es="Ático con terraza · Gràcia" data-en="Penthouse with terrace · Gràcia">Ático con terraza · Gràcia</h3><div class="meta"><span>110 m²</span><span data-es="3 hab." data-en="3 bed">3 hab.</span><span data-es="2 baños" data-en="2 bath">2 baños</span></div><p class="price">540.000 €</p></div></a></article>
-      <article class="card" data-t="alquiler"><a href="propiedad.html"><div class="ph c" role="img" aria-label="Fotografía del inmueble"><span class="tag" data-es="Alquiler" data-en="Rent">Alquiler</span></div><div class="body"><h3 data-es="Estudio reformado · Poblenou" data-en="Renovated studio · Poblenou">Estudio reformado · Poblenou</h3><div class="meta"><span>42 m²</span><span data-es="1 hab." data-en="1 bed">1 hab.</span><span data-es="1 baño" data-en="1 bath">1 baño</span></div><p class="price">1.150 €/<span data-es="mes" data-en="month">mes</span></p></div></a></article>
+      <article class="card" data-t="alquiler"><a href="propiedad.html"><div class="ph"><img src="img/flat-eixample.jpg" alt="Piso luminoso en el Eixample" loading="lazy" decoding="async"><span class="tag" data-es="Alquiler" data-en="Rent">Alquiler</span></div><div class="body"><h3 data-es="Piso luminoso · Eixample" data-en="Bright flat · Eixample">Piso luminoso · Eixample</h3><div class="meta"><span>85 m²</span><span data-es="3 hab." data-en="3 bed">3 hab.</span><span data-es="2 baños" data-en="2 bath">2 baños</span></div><p class="price">1.850 €/<span data-es="mes" data-en="month">mes</span></p></div></a></article>
+      <article class="card" data-t="venta"><a href="propiedad.html"><div class="ph"><img src="img/terrace-penthouse.jpg" alt="Ático con terraza en Gràcia" loading="lazy" decoding="async"><span class="tag" data-es="Venta" data-en="Sale">Venta</span></div><div class="body"><h3 data-es="Ático con terraza · Gràcia" data-en="Penthouse with terrace · Gràcia">Ático con terraza · Gràcia</h3><div class="meta"><span>110 m²</span><span data-es="3 hab." data-en="3 bed">3 hab.</span><span data-es="2 baños" data-en="2 bath">2 baños</span></div><p class="price">540.000 €</p></div></a></article>
+      <article class="card" data-t="alquiler"><a href="propiedad.html"><div class="ph"><img src="img/studio-light.jpg" alt="Estudio reformado en Poblenou" loading="lazy" decoding="async"><span class="tag" data-es="Alquiler" data-en="Rent">Alquiler</span></div><div class="body"><h3 data-es="Estudio reformado · Poblenou" data-en="Renovated studio · Poblenou">Estudio reformado · Poblenou</h3><div class="meta"><span>42 m²</span><span data-es="1 hab." data-en="1 bed">1 hab.</span><span data-es="1 baño" data-en="1 bath">1 baño</span></div><p class="price">1.150 €/<span data-es="mes" data-en="month">mes</span></p></div></a></article>
     </div>
     <p class="note" data-es="Ejemplos ilustrativos. En la web definitiva, cada ficha se crea y se edita desde el panel de WordPress." data-en="Illustrative examples. On the final site, each listing is created and edited from the WordPress dashboard.">Ejemplos ilustrativos. En la web definitiva, cada ficha se crea y se edita desde el panel de WordPress.</p>
     <div class="buyers">
